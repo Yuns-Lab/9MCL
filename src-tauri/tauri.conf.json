@@ -1,84 +1,49 @@
 {
-    "$schema": "https://schema.tauri.app/config/1",
+    "$schema": "https://schema.tauri.app/config/2",
     "build": {
         "beforeDevCommand": "pnpm dev",
         "beforeBuildCommand": "pnpm build",
-        "devPath": "http://localhost:1420",
-        "distDir": "../dist"
+        "frontendDist": "../dist",
+        "devUrl": "http://localhost:1420"
     },
-    "package": {
-        "productName": "YunMCL",
-        "version": "0.1.0"
+    "bundle": {
+        "active": true,
+        "targets": "all",
+        "icon": [
+            "icons/32x32.png",
+            "icons/128x128.png",
+            "icons/128x128@2x.png",
+            "icons/icon.icns",
+            "icons/icon.ico"
+        ]
     },
-    "tauri": {
-        "allowlist": {
-            "all": false,
-            "shell": {
-                "all": false,
-                "open": true
-            },
-            "window": {
-                "all": false,
-                "center": true,
-                "close": true,
-                "create": false,
-                "hide": false,
-                "maximize": false,
-                "minimize": true,
-                "print": false,
-                "requestUserAttention": false,
-                "setAlwaysOnTop": false,
-                "setClosable": false,
-                "setContentProtected": false,
-                "setCursorGrab": false,
-                "setCursorIcon": false,
-                "setCursorPosition": false,
-                "setCursorVisible": false,
-                "setDecorations": false,
-                "setFocus": false,
-                "setFullscreen": false,
-                "setIcon": false,
-                "setIgnoreCursorEvents": false,
-                "setMaxSize": false,
-                "setMaximizable": false,
-                "setMinSize": false,
-                "setMinimizable": false,
-                "setPosition": false,
-                "setResizable": false,
-                "setSize": false,
-                "setSkipTaskbar": false,
-                "setTitle": false,
-                "show": false,
-                "startDragging": true,
-                "unmaximize": false,
-                "unminimize": false
-            }
+    "productName": "9MCL",
+    "mainBinaryName": "9MCL",
+    "version": "0.1.3",
+    "identifier": "io.github.yuns-lab.9mcl.app",
+    "plugins": {
+        "plugins-fs": {
+            "all": true,
+            "dir": ["$HOME/*"]
+        }
+    },
+    "app": {
+        "security": {
+            "csp": null
         },
         "windows": [
             {
-                "title": "云启 · YunMCL",
+                "title": "九江 · 9MCL",
                 "width": 960,
                 "height": 700,
+                "minWidth": 960,
+                "minHeight": 700,
                 "center": true,
                 "decorations": false,
                 "transparent": true,
                 "titleBarStyle": "Transparent"
             }
-        ],
-        "security": {
-            "csp": null
-        },
-        "bundle": {
-            "active": true,
-            "targets": "all",
-            "identifier": "io.github.yuns-lab.yunmcl.app",
-            "icon": [
-                "icons/32x32.png",
-                "icons/128x128.png",
-                "icons/128x128@2x.png",
-                "icons/icon.icns",
-                "icons/icon.ico"
-            ]
-        }
+        ]
     }
 }
+

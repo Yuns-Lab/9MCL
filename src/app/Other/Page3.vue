@@ -1,7 +1,9 @@
 <script setup lang="ts">
     import { useRoute, useRouter } from "vue-router";
+    // Components
     import YunLeftMenuButton from "@/components/YunLeftMenuButton.vue";
     import YunLoading from "@/components/YunLoading.vue";
+    // Icons
     import IconOtherInfo from "@/icons/IconOtherInfo.vue";
     import IconOtherLaw from "@/icons/IconOtherLaw.vue";
     import IconPageOther from "@/icons/IconPageOther.vue";

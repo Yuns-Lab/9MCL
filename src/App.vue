@@ -1,7 +1,7 @@
 <script setup lang="ts">
     import { ref } from "vue";
     import { RouterView, useRoute, useRouter } from "vue-router";
-    import { appWindow } from "@tauri-apps/api/window";
+    import { getCurrentWebviewWindow } from "@tauri-apps/api/webviewWindow";
     // Components
     import YunIconButton from "@/components/YunIconButton.vue";
     // Icons
@@ -12,6 +12,7 @@
     import IconPageDownload from "@/icons/IconPageDownload.vue";
     import IconPageSetting from "@/icons/IconPageSetting.vue";
     import IconPageOther from "@/icons/IconPageOther.vue";
+    const appWindow = getCurrentWebviewWindow()
 
     const menu = ref<null | HTMLDivElement>(null);
     const toggleMenu = () => {
@@ -34,7 +35,7 @@
             <span
                 id="title"
                 data-tauri-drag-region>
-                YunMCL
+                9MCL
             </span>
             <div id="nav-right">
                 <div

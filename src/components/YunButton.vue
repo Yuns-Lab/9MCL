@@ -22,7 +22,7 @@
         border: 1px solid #081c0e;
         background-color: #f8f8f9;
         border-radius: 4px;
-        padding: 12px 6px;
+        padding: 8px 18px;
         cursor: pointer;
         transition: all 0.2s ease-in-out;
         &:hover {
