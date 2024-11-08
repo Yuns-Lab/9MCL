@@ -28,15 +28,19 @@
         padding: 12px 6px;
         cursor: pointer;
         transition: all 0.2s ease-in-out;
+        
         &:hover {
             background-color: #f2f2f2;
         }
+        
         &:active {
             transform: scale(0.97);
         }
+        
         span#launch {
             font-size: 1.5em;
         }
+        
         span#client-name {
             font-size: 0.8em;
             opacity: 0.75;

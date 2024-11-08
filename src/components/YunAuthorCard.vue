@@ -37,15 +37,18 @@
         align-items: center;
         gap: 16px;
         margin: 0 auto;
+        
         img.yun-author-card__image {
             border-radius: 8px;
             box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.25);
         }
+        
         div.yun-author-card__info {
             display: flex;
             flex-direction: column;
             width: 100%;
             padding: 0 8px 0 4px;
+            
             div.yun-author-card__container {
                 display: flex;
                 gap: 4px;

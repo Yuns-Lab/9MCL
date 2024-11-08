@@ -15,32 +15,32 @@
     import IconDownloadModpack from "@/icons/IconDownloadModpack.vue";
     import IconDownloadAddon from "@/icons/IconDownloadAddon.vue";
     import YunDropdown from "@/components/YunDropdown.vue";
-
+    
     const route = useRoute();
     const router = useRouter();
-
+    
     const searchOptions = reactive({
         searchText: "",
         searchPlatfrom: "all",
         searchMcVersion: "all",
         searchType: "all",
-        searchTag: "all",
+        searchTag: "all"
     });
     const dropdownOptions = reactive({
         mcVersions: [{ label: "全部", value: "all" }],
         platfroms: [
             { label: "全部", value: "all" },
             { label: "CurseForge", value: "cf" },
-            { label: "Modrinth", value: "mr" },
+            { label: "Modrinth", value: "mr" }
         ],
         type: [
             { label: "全部", value: "all" },
             { label: "资源包", value: "resourcepack" },
-            { label: "光影包", value: "shaderpack" },
+            { label: "光影包", value: "shaderpack" }
         ],
-        tag: [{ label: "全部", value: "all" }],
+        tag: [{ label: "全部", value: "all" }]
     });
-
+    
     const handleResetSearch = () => {
         searchOptions.searchText = "";
         searchOptions.searchPlatfrom = "all";
@@ -152,6 +152,7 @@
         width: 100vw;
         height: 100%;
         display: flex;
+        
         div#OpLeft {
             --pad-y: 24px;
             width: 180px;
@@ -164,18 +165,21 @@
             align-items: center;
             padding: var(--pad-y) 0;
             padding-bottom: 24px;
+            
             span.OpLeftSmTitle {
                 width: 85%;
                 opacity: 0.8;
                 font-size: 0.8em;
             }
         }
+        
         div#OpRight {
             width: calc(100vw - 180px - 48px);
             padding: 24px;
             display: flex;
             flex-direction: column;
             gap: 16px;
+            
             form#ModSearchContainer {
                 width: calc(100% - 24px);
                 padding: 3px 12px;

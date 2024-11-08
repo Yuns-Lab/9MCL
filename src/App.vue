@@ -12,15 +12,16 @@
     import IconPageDownload from "@/icons/IconPageDownload.vue";
     import IconPageSetting from "@/icons/IconPageSetting.vue";
     import IconPageOther from "@/icons/IconPageOther.vue";
-    const appWindow = getCurrentWebviewWindow()
-
+    
+    const appWindow = getCurrentWebviewWindow();
+    
     const menu = ref<null | HTMLDivElement>(null);
     const toggleMenu = () => {
         menu.value?.classList.toggle("show");
         if (menu.value?.classList.contains("show")) {
             setTimeout(() => {
                 menu.value?.classList.remove("show");
-            }, 5000)
+            }, 5000);
         }
     };
     const route = useRoute();
@@ -35,7 +36,7 @@
             <span
                 id="title"
                 data-tauri-drag-region>
-                9MCL
+                YunMCL
             </span>
             <div id="nav-right">
                 <div
@@ -104,6 +105,7 @@
         font-family: "Bahnschrift", sans-serif;
         user-select: none;
     }
+    
     ::-webkit-scrollbar {
         display: none;
     }
@@ -119,15 +121,17 @@
         overflow: hidden;
         color: #081c0e;
         background-color: #dbe0df;
+        
         div#appnav {
             width: 100vw;
             height: 60px;
             background-image: url("/themebg.png"),
-                linear-gradient(to right, #081c0e, #081c0e);
+            linear-gradient(to right, #081c0e, #081c0e);
             display: flex;
             align-items: center;
             padding: 0 24px;
             position: relative;
+            
             img#navbg {
                 position: absolute;
                 width: 100%;
@@ -135,10 +139,12 @@
                 left: -24px;
                 z-index: 0;
             }
+            
             span#title {
                 font-size: 24px;
                 color: #dbe0df;
             }
+            
             div#nav-right {
                 display: flex;
                 align-items: center;
@@ -147,6 +153,7 @@
                 height: 100%;
                 margin-left: auto;
                 margin-right: 42px;
+                
                 div#nav-menu {
                     display: flex;
                     align-items: center;
@@ -154,9 +161,11 @@
                     width: 30px;
                     overflow: hidden;
                     transition: all 0.3s ease-in-out;
+                    
                     &.show {
                         width: 372.25px;
                     }
+                    
                     span.badge {
                         margin-left: 8px;
                         width: 2em;

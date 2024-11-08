@@ -54,7 +54,7 @@
                         ">
                         <img
                             draggable="false"
-                            src="/Logo9MCL.png"
+                            src="/LogoYunMCL.png"
                             height="162"
                             style="
                                 box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
@@ -62,7 +62,7 @@
                             " />
                         <div
                             style="margin: auto 0; transform: translateY(-8px)">
-                            <h1>九江 · 9MCL</h1>
+                            <h1>云启 · YunMCL</h1>
                             <span>
                                 {{ $env.VITE_APP_UPDATE_CHANNEL }}渠道 v{{
                                     $env.VITE_APP_VERSION

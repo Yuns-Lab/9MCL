@@ -5,7 +5,7 @@
         placeholder?: string;
     }>();
     const emits = defineEmits(["update:modelValue"]);
-
+    
     const handleInput = (event: Event) => {
         emits("update:modelValue", (event.target as HTMLInputElement).value);
     };
@@ -27,15 +27,18 @@
         display: flex;
         align-items: center;
         gap: 16px;
+        
         span {
             width: 2rem;
         }
+        
         input {
-        height: 24px;
-        flex-grow: 1;
+            height: 24px;
+            flex-grow: 1;
             border: 1px solid #081c0e6f;
             border-radius: 4px;
             padding: 4px 8px;
+            
             &:focus {
                 outline: none;
                 border: 1px solid #081c0e;

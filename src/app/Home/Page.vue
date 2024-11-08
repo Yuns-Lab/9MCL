@@ -11,14 +11,14 @@
     import IconEditSkin from "@/icons/IconEditSkin.vue";
     import IconList from "@/icons/IconList.vue";
     import YunTooltip from "@/components/YunTooltip.vue";
-
+    
     let loginType: keyof typeof loginTypeText = "ms";
     const loginTypeText = {
         ms: "正版",
         legacy: "离线",
-        authlib: "第三方登录",
+        authlib: "第三方登录"
     };
-
+    
     const avatardisplay = ref<null | HTMLDivElement>(null);
     const showskb = () => {
         avatardisplay.value
@@ -35,7 +35,7 @@
                 "mouseleave",
                 () => btn.classList.remove("show"),
                 {
-                    once: true,
+                    once: true
                 }
             )
         );
@@ -116,6 +116,7 @@
         width: 100vw;
         height: 100%;
         display: flex;
+        
         div#HomeLeft {
             --pad-y: 48px;
             width: 350px;
@@ -128,6 +129,7 @@
             align-items: center;
             padding: var(--pad-y) 0;
             padding-bottom: 24px;
+            
             div#LoginType {
                 background-color: hsl(138, 56%, 12%);
                 color: #f8f8f9;
@@ -138,6 +140,7 @@
                 padding: 6px 16px;
                 border-radius: 4px;
             }
+            
             div#PlayerInfo {
                 margin-top: auto;
                 display: flex;
@@ -145,11 +148,13 @@
                 justify-content: center;
                 flex-direction: column;
                 gap: 16px;
+                
                 div#AvatarDisplay {
                     --avatar-size: 84px;
                     width: var(--avatar-size);
                     height: var(--avatar-size);
                     position: relative;
+                    
                     div#ImgContainer {
                         position: relative;
                         width: 100%;
@@ -157,21 +162,25 @@
                         border-radius: 8px;
                         box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.25);
                         overflow: hidden;
+                        
                         img {
                             position: absolute;
                             width: 100%;
                             height: 100%;
                         }
                     }
+                    
                     button.yun-skin-button:active {
                         transform: translate(-50%, -50%) scale(0.94);
                     }
                 }
+                
                 span#PlayerName {
                     font-size: 1.3em;
                     margin-top: 4px;
                 }
             }
+            
             div#ButtonGroup {
                 width: 90%;
                 margin-top: auto;

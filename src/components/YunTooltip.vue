@@ -22,6 +22,7 @@
 <style lang="scss">
     div.yun-tooltip {
         position: relative;
+        
         span.yun-tooltip__content {
             position: absolute;
             background-color: white;
@@ -30,6 +31,7 @@
             padding: 1px;
             transform: translateY(-100%);
         }
+        
         div.yun-tooltip__real {
             position: absolute;
             top: 0;

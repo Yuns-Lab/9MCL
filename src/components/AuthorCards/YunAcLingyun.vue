@@ -10,7 +10,7 @@
     // Icons
     import IconColorPen from "@/icons/IconColorPen.vue";
     import IconGithub from "@/icons/IconGithub.vue";
-
+    
     const visitGithubUser = async (username: string) => {
         window.open(`https://github.com/${username}`, "_blank");
     };
@@ -30,9 +30,9 @@
                 </template>
                 JingHai-Lingyun
             </ATag>
-            <ATag color="orange" bordered style="margin: 0 16px"> 创始人 </ATag>
-            <ATag color="blue" bordered> 核心开发者 </ATag>
-            <ATag color="magenta" bordered> 核心美术 </ATag>
+            <ATag color="orange" bordered style="margin: 0 16px"> 创始人</ATag>
+            <ATag color="blue" bordered> 核心开发者</ATag>
+            <ATag color="magenta" bordered> 核心美术</ATag>
         </template>
         <template #tags>
             <span style="transform: translateY(-5px)">主要职责：</span>
@@ -66,6 +66,7 @@
         margin: 0;
         margin-right: 4px;
     }
+    
     a {
         color: #081c0e;
     }

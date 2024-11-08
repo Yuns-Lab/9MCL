@@ -26,9 +26,11 @@
         align-items: center;
         min-height: 30px;
         transition: background-color 0.15s ease-in-out;
+        
         &:hover {
             background-color: rgba(255, 255, 255, 0.2);
         }
+        
         &.yun-icon-button--highlight {
             background-color: #f8f8f9;
             color: #081c0e;

@@ -28,12 +28,15 @@
         transition: all 0.2s ease-in-out;
         z-index: -1;
         opacity: 0;
+        
         &:hover {
             background-color: #f2f2f2;
         }
+        
         &:active {
             transform: translate(-50%, -50%) scale(0.97);
         }
+        
         &.show {
             left: var(--show-left);
             top: var(--show-top);

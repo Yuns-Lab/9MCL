@@ -1,6 +1,7 @@
 <script setup lang="ts">
     import YunCard from "./YunCard.vue";
     import YunLoadingCube from "./YunLoadingCube.vue";
+    
     const props = defineProps<{
         text: string;
         isfailed?: boolean;
@@ -22,12 +23,12 @@
         height: 130px;
         display: flex;
         align-self: center;
-        margin: auto;
-        display: flex;
         justify-content: center;
         align-items: center;
+        margin: auto;
         flex-direction: column;
         gap: 16px;
+        
         span.yun-loading__text {
             font-size: 1.3em;
         }

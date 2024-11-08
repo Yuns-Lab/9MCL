@@ -55,7 +55,7 @@
                         <br />
                         <span>除此之外，本软件不会收集和向开发者发送任何用户信息</span>
                         <h3>版权</h3>
-                        <span>Copyright © 凌云 2024. All Rights Reserved.</span>
+                        <span>Copyright © 2024, Jim Lin. All Rights Reserved.</span>
                         <br />
                         <div>
                             作者平台信息：
@@ -67,7 +67,7 @@
                         <h3>其他信息</h3>
                         <span>违法违规举报邮箱 <a style="color: inherit" href="mailto:Jim.Lin.4549@outlook.com">Jim.Lin.4549@outlook.com</a></span>
                         <br />
-                        <span>非 Minecraft 官方产品，未经 Mojang 或 Microsoft 批准，也与 Mojang 或 Microsoft 没有任何关联。</span>
+                        <span>本软件不是 Minecraft 官方产品，未经 Mojang 或 Microsoft 批准，也与 Mojang 或 Microsoft 没有任何关联。</span>
                     </div>
                 </YunCard>
                 <YunCard title="第三方内容版权和许可声明" :can-swap="true" :is-swapped="true">

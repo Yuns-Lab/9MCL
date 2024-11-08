@@ -9,7 +9,7 @@
     import IconSettingCustomize from "@/icons/IconSettingCustomize.vue";
     import IconSettingCore from "@/icons/IconSettingCore.vue";
     import IconSettingLaunch from "@/icons/IconSettingLaunch.vue";
-
+    
     const route = useRoute();
     const router = useRouter();
 </script>
@@ -49,6 +49,7 @@
         width: 100vw;
         height: 100%;
         display: flex;
+        
         div#OpLeft {
             --pad-y: 24px;
             width: 180px;
@@ -61,12 +62,14 @@
             align-items: center;
             padding: var(--pad-y) 0;
             padding-bottom: 24px;
+            
             span.OpLeftSmTitle {
                 width: 85%;
                 opacity: 0.8;
                 font-size: 0.8em;
             }
         }
+        
         div#OpRight {
             width: calc(100vw - 180px - 48px);
             padding: 24px;

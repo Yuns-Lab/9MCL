@@ -25,9 +25,11 @@
         padding: 8px 18px;
         cursor: pointer;
         transition: all 0.2s ease-in-out;
+        
         &:hover {
             background-color: #f2f2f2;
         }
+        
         &:active {
             transform: scale(0.97);
         }

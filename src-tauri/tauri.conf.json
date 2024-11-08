@@ -34,9 +34,9 @@
         "windows": [
             {
                 "title": "九江 · 9MCL",
-                "width": 960,
+                "width": 980,
                 "height": 700,
-                "minWidth": 960,
+                "minWidth": 980,
                 "minHeight": 700,
                 "center": true,
                 "decorations": false,

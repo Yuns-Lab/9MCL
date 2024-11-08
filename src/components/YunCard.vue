@@ -1,13 +1,13 @@
 <script setup lang="ts">
     import IconArrowRight from "@/icons/IconArrowRight.vue";
     import { ref } from "vue";
-
+    
     const props = defineProps<{
         title?: string;
         canSwap?: boolean;
         isSwapped?: boolean;
     }>();
-
+    
     const yuncard = ref<HTMLDivElement>();
     const isCardOpen = ref<boolean>(
         props.canSwap ? (props.isSwapped ? false : true) : true
@@ -64,26 +64,32 @@
         overflow: hidden;
         transition: all 0.2s ease-in-out;
         box-shadow: 2px 2px 6px rgba(8, 28, 14, 0.15);
+        
         div.yun-card__top {
             display: flex;
             margin-bottom: 12px;
+            
             .yun-card__top-icon {
                 margin-left: auto;
                 transition: all 0.3s cubic-bezier(0.27, -0.51, 0.74, 1.51);
                 transform: translateY(-1px) rotate(90deg);
             }
+            
             span {
                 font-weight: bold;
                 color: #081c0e;
                 transform: translateY(2px);
             }
+            
             &.canSwap {
                 cursor: pointer;
             }
         }
+        
         &.swapped {
             height: 23px;
         }
+        
         div.yun-card__top .yun-card__top-icon.swapped {
             transform: translateY(-1px) rotate(-90deg);
         }

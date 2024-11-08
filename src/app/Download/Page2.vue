@@ -9,7 +9,7 @@
     import IconDownloadMod from "@/icons/IconDownloadMod.vue";
     import IconDownloadModpack from "@/icons/IconDownloadModpack.vue";
     import IconDownloadAddon from "@/icons/IconDownloadAddon.vue";
-
+    
     const route = useRoute();
     const router = useRouter();
 </script>
@@ -61,6 +61,7 @@
         width: 100vw;
         height: 100%;
         display: flex;
+        
         div#OpLeft {
             --pad-y: 24px;
             width: 180px;
@@ -73,6 +74,7 @@
             align-items: center;
             padding: var(--pad-y) 0;
             padding-bottom: 24px;
+            
             span.OpLeftSmTitle {
                 width: 85%;
                 opacity: 0.8;

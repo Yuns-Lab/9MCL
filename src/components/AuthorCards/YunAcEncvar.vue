@@ -8,7 +8,7 @@
     import LogoCpp from "@/icons/logos/LogoCpp.vue";
     // Icons
     import IconGithub from "@/icons/IconGithub.vue";
-
+    
     const visitGithubUser = async (username: string) => {
         window.open(`https://github.com/${username}`, "_blank");
     };
@@ -50,6 +50,7 @@
         margin: 0;
         margin-right: 4px;
     }
+    
     a {
         color: #081c0e;
     }

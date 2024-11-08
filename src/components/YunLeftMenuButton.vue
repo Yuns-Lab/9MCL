@@ -1,6 +1,6 @@
 <script setup lang="ts">
     import IconArrowRight from "@/icons/IconArrowRight.vue";
-
+    
     const props = defineProps<{
         tabIndex?: number;
         hightlight?: boolean;
@@ -37,12 +37,15 @@
         margin-left: auto;
         margin-right: 8px;
         font-size: 13px;
+        
         &:hover {
             background-color: rgba(8, 28, 14, 0.1);
         }
+        
         &.yun-left-menu-button--highlight {
             background-color: rgba(29, 103, 51, 0.2);
         }
+        
         div.yun-left-menu-button__content {
             display: flex;
             align-items: center;

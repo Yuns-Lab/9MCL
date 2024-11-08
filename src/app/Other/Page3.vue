@@ -7,7 +7,7 @@
     import IconOtherInfo from "@/icons/IconOtherInfo.vue";
     import IconOtherLaw from "@/icons/IconOtherLaw.vue";
     import IconPageOther from "@/icons/IconPageOther.vue";
-
+    
     const route = useRoute();
     const router = useRouter();
 </script>
@@ -49,6 +49,7 @@
         width: 100vw;
         height: 100%;
         display: flex;
+        
         div#OpLeft {
             --pad-y: 24px;
             width: 180px;
@@ -61,6 +62,7 @@
             align-items: center;
             padding: var(--pad-y) 0;
             padding-bottom: 24px;
+            
             span.OpLeftSmTitle {
                 width: 85%;
                 opacity: 0.8;
